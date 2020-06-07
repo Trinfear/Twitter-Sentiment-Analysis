@@ -81,7 +81,8 @@ lexicon_dir = 'train_data/lexicon.pickle'
 
 # other
 
-keywords = ['hong kong protestors', 'hong kong riots', 'hk rioters', 'hk protestors', 'hong kong rioters', 'hong kong protests']
+# keywords = ['joe biden', 'biden']
+keywords = ['riots', 'protests', 'protestors', 'rioters']
 # keywords = ['trump', 'impeach', 'impeachment']
 
 
@@ -92,6 +93,7 @@ def run_listener(keyword_set, auth, a, b, keywords):
 
     while True:
         try:
+            # add in a language check
             twitterStream = Stream(auth, Listener(a, b, keywords, wait_on_rate_limit=True, wait_on_rate_limit_notify=True))
             twitterStream.filter(track=keyword_set)
         except:

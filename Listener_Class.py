@@ -49,7 +49,7 @@ class Listener(StreamListener):  # this needs to be here to properly call funcs
         self.keywords = keywords
         print('Listener started')
 
-        self.loc_search = False
+        self.loc_search = True
 
         self.loc_name = 'colorado'
         self.loc_short = 'co'

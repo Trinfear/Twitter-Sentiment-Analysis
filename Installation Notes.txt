@@ -1,0 +1,30 @@
+Installation Notes, Twitter Tool
+
+
+Requires python 3.6
+
+packages:
+
+	time
+	datetime
+	pickle
+	threading
+	numpy
+	multiprocessing
+	collections
+	nltk
+
+	keras
+	tensorflow
+
+	sklearn
+
+	json
+
+	tweepy
+
+	logging
+
+	matplotlib
+
+	
